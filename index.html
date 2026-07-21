@@ -1,0 +1,185 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Does Pro Ticker Work? — Independent Track Record</title>
+<style>
+:root { color-scheme: light dark;
+  --bg:#0b0e14; --card:#151a24; --line:#232b3a; --txt:#e6edf3; --dim:#8b98a9;
+  --accent:#4da3ff; --good:#3fb950; --bad:#f85149; --flat:#8b98a9; }
+@media (prefers-color-scheme:light) { :root {
+  --bg:#f4f6fa; --card:#fff; --line:#e2e8f0; --txt:#1a2230; --dim:#5b6675;
+  --accent:#1f6feb; --good:#1a7f37; --bad:#cf222e; --flat:#8b98a9; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--txt);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.wrap { max-width:1080px; margin:0 auto; padding:28px 20px 60px; }
+h1 { font-size:26px; margin:0 0 4px; letter-spacing:-.02em; }
+.sub { color:var(--dim); margin:0 0 24px; font-size:13.5px; }
+.verdict { display:inline-block; padding:6px 14px; border-radius:999px; font-weight:600;
+  font-size:13px; margin-bottom:24px; }
+.verdict.good { background:color-mix(in srgb,var(--good) 18%,transparent); color:var(--good); }
+.verdict.bad { background:color-mix(in srgb,var(--bad) 18%,transparent); color:var(--bad); }
+.verdict.neutral { background:color-mix(in srgb,var(--accent) 16%,transparent); color:var(--accent); }
+.stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-bottom:28px; }
+.stat { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+.stat-val { font-size:26px; font-weight:700; letter-spacing:-.02em; }
+.stat-lbl { font-size:12.5px; color:var(--dim); margin-top:2px; }
+.stat-sub { font-size:11.5px; color:var(--dim); margin-top:4px; opacity:.85; }
+h2 { font-size:16px; margin:32px 0 12px; }
+table { width:100%; border-collapse:collapse; background:var(--card);
+  border:1px solid var(--line); border-radius:12px; overflow:hidden; font-size:13.5px; }
+th,td { padding:9px 12px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
+th { font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--dim); font-weight:600; }
+tr:last-child td { border-bottom:0; }
+.num { text-align:right; font-variant-numeric:tabular-nums; }
+.tk { font-weight:700; }
+.best { color:var(--good); } .dd { color:var(--bad); }
+.close { font-weight:600; }
+.pos { color:var(--good); } .neg { color:var(--bad); }
+.pill { padding:2px 9px; border-radius:999px; font-size:11px; font-weight:700; }
+.pill.win { background:color-mix(in srgb,var(--good) 20%,transparent); color:var(--good); }
+.pill.loss { background:color-mix(in srgb,var(--bad) 20%,transparent); color:var(--bad); }
+.pill.flat,.pill.live { background:color-mix(in srgb,var(--flat) 22%,transparent); color:var(--flat); }
+.note { color:var(--dim); font-size:11px; margin-left:6px; }
+.scroll { overflow-x:auto; }
+.foot { margin-top:34px; color:var(--dim); font-size:12px; line-height:1.7; }
+.foot b { color:var(--txt); }
+</style></head><body><div class="wrap">
+<h1>Does Pro Ticker Work?</h1>
+<p class="sub">Independent accuracy tracking · scored against real market data · updated Tuesday, July 21 2026 at 2:41 PM ET</p>
+<div class="verdict neutral">Too early — 13 of 30 completed trades tracked</div>
+<div class="stats">
+  <div class="stat"><div class="stat-val">13</div>
+        <div class="stat-lbl">Trades tracked</div><div class="stat-sub">triggered &amp; completed</div></div>
+  <div class="stat"><div class="stat-val">62%</div>
+        <div class="stat-lbl">Win rate at close</div><div class="stat-sub">honest exit</div></div>
+  <div class="stat"><div class="stat-val">+7.0%</div>
+        <div class="stat-lbl">Avg return / trade</div><div class="stat-sub">held to close</div></div>
+  <div class="stat"><div class="stat-val">+42.2%</div>
+        <div class="stat-lbl">Avg best case</div><div class="stat-sub">perfect exit at top</div></div>
+  <div class="stat"><div class="stat-val">-16.9%</div>
+        <div class="stat-lbl">Avg drawdown</div><div class="stat-sub">dip you'd sit through</div></div>
+  <div class="stat"><div class="stat-val">0</div>
+        <div class="stat-lbl">No-trigger signals</div><div class="stat-sub">never hit entry level</div></div>
+</div>
+<h2>By day</h2>
+<div class="scroll"><table>
+<thead><tr><th>Date</th><th class="num">Trades</th><th class="num">Wins</th><th class="num">Avg @ close</th></tr></thead>
+<tbody><tr><td>2026-07-17</td><td class="num">2</td>
+          <td class="num">2/2</td>
+          <td class="num pos">+17.4%</td></tr><tr><td>2026-07-08</td><td class="num">2</td>
+          <td class="num">1/2</td>
+          <td class="num neg">-4.0%</td></tr><tr><td>2026-07-07</td><td class="num">4</td>
+          <td class="num">2/4</td>
+          <td class="num neg">-6.3%</td></tr><tr><td>2026-05-27</td><td class="num">5</td>
+          <td class="num">3/5</td>
+          <td class="num pos">+18.0%</td></tr></tbody>
+</table></div>
+<h2>Completed calls — track record</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Ticker</th><th>Direction</th><th class="num">Best case</th><th class="num">Drawdown</th><th class="num">At close</th><th>Result</th></tr></thead><tbody><tr>
+          <td>2026-07-17</td>
+          <td class="tk">SLND</td>
+          <td>long</td>
+          <td class="num best">+20.8%</td>
+          <td class="num dd">-9.5%</td>
+          <td class="num close">+14.9%</td>
+          <td><span class="pill win">WIN</span></td>
+        </tr><tr>
+          <td>2026-07-17</td>
+          <td class="tk">SDOT</td>
+          <td>long</td>
+          <td class="num best">+46.8%</td>
+          <td class="num dd">-8.1%</td>
+          <td class="num close">+19.9%</td>
+          <td><span class="pill win">WIN</span></td>
+        </tr><tr>
+          <td>2026-07-08</td>
+          <td class="tk">VTAK</td>
+          <td>long</td>
+          <td class="num best">+45.0%</td>
+          <td class="num dd">+0.0%</td>
+          <td class="num close">+12.2%</td>
+          <td><span class="pill win">WIN</span></td>
+        </tr><tr>
+          <td>2026-07-08</td>
+          <td class="tk">EDBL</td>
+          <td>long</td>
+          <td class="num best">+0.7%</td>
+          <td class="num dd">-29.1%</td>
+          <td class="num close">-20.1%</td>
+          <td><span class="pill loss">LOSS</span></td>
+        </tr><tr>
+          <td>2026-07-07</td>
+          <td class="tk">TVRD</td>
+          <td>long</td>
+          <td class="num best">+30.0%</td>
+          <td class="num dd">-8.8%</td>
+          <td class="num close">+4.4%</td>
+          <td><span class="pill win">WIN</span></td>
+        </tr><tr>
+          <td>2026-07-07</td>
+          <td class="tk">CLRO</td>
+          <td>long</td>
+          <td class="num best">+57.9%</td>
+          <td class="num dd">-7.0%</td>
+          <td class="num close">+31.2%</td>
+          <td><span class="pill win">WIN</span></td>
+        </tr><tr>
+          <td>2026-07-07</td>
+          <td class="tk">TDTH</td>
+          <td>long</td>
+          <td class="num best">+6.4%</td>
+          <td class="num dd">-20.2%</td>
+          <td class="num close">-14.8%</td>
+          <td><span class="pill loss">LOSS</span></td>
+        </tr><tr>
+          <td>2026-07-07</td>
+          <td class="tk">CCHH</td>
+          <td>long</td>
+          <td class="num best">+17.0%</td>
+          <td class="num dd">-57.6%</td>
+          <td class="num close">-46.1%</td>
+          <td><span class="pill loss">LOSS</span></td>
+        </tr><tr>
+          <td>2026-05-27</td>
+          <td class="tk">AIM</td>
+          <td>long</td>
+          <td class="num best">+53.8%</td>
+          <td class="num dd">-13.8%</td>
+          <td class="num close">+4.8%</td>
+          <td><span class="pill win">WIN</span></td>
+        </tr><tr>
+          <td>2026-05-27</td>
+          <td class="tk">ASTC</td>
+          <td>long</td>
+          <td class="num best">+190.9%</td>
+          <td class="num dd">-9.1%</td>
+          <td class="num close">+103.1%</td>
+          <td><span class="pill win">WIN</span></td>
+        </tr><tr>
+          <td>2026-05-27</td>
+          <td class="tk">SNGX</td>
+          <td>long</td>
+          <td class="num best">+10.8%</td>
+          <td class="num dd">-20.8%</td>
+          <td class="num close">-15.1%</td>
+          <td><span class="pill loss">LOSS</span></td>
+        </tr><tr>
+          <td>2026-05-27</td>
+          <td class="tk">BRTX</td>
+          <td>long</td>
+          <td class="num best">+51.1%</td>
+          <td class="num dd">-17.2%</td>
+          <td class="num close">-4.9%</td>
+          <td><span class="pill loss">LOSS</span></td>
+        </tr><tr>
+          <td>2026-05-27</td>
+          <td class="tk">LGHL</td>
+          <td>short</td>
+          <td class="num best">+17.1%</td>
+          <td class="num dd">-18.2%</td>
+          <td class="num close">+1.9%</td>
+          <td><span class="pill win">WIN</span></td>
+        </tr></tbody></table></div>
+<div class="foot">
+<b>What this is.</b> An independent scorecard for Pro Ticker's daily stock signals. Every completed call is measured against real 5-minute market data from Yahoo Finance and recorded here — win or lose.<br><b>Entry price levels are intentionally withheld.</b> This page shows results, not tradable signals: it demonstrates whether the calls work without redistributing Pro Ticker's paid levels.<br><b>Best case</b> = a perfect exit at the day's high (nobody does this every time). <b>At close</b> = the honest result if held to the market close. <b>Drawdown</b> = the worst dip after entry.<br><b>Not affiliated with Pro Ticker. Not investment advice.</b> Past performance says nothing about the future.
+</div>
+</div></body></html>
