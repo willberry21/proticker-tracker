@@ -69,7 +69,7 @@ tr:last-child td { border-bottom:0; }
 
 
 <div class="verdict neutral">Too early — 19 of 30 completed trades tracked</div>
-<h2>Today so far — Wednesday, July 22</h2><p class="sub">These are Pro Ticker's picks for today, in plain words. A pick only <b>starts</b> once the stock reaches Pro Ticker's entry point &mdash; until then it is just waiting. <b style="color:var(--good)">Green</b> = winning right now, <b style="color:var(--bad)">red</b> = losing right now, grey = not started. Nothing is final until the market closes at 4:00 PM ET.</p><div class="today"><div class="tcard wait"><div class="tstock">INM</div><div class="tstate">🟡 Started · about even</div></div><div class="tcard win"><div class="tstock">LABT</div><div class="tstate">🟢 Winning so far · +8%</div></div><div class="tcard win"><div class="tstock">ZCMD</div><div class="tstate">🟢 Winning so far · +138%</div></div><div class="tcard wait"><div class="tstock">INLF</div><div class="tstate">⏳ Hasn't started yet</div></div></div>
+<h2>Today so far — Wednesday, July 22</h2><p class="sub">These are Pro Ticker's picks for today, in plain words. A pick only <b>starts</b> once the stock reaches Pro Ticker's entry point &mdash; until then it is just waiting. <b style="color:var(--good)">Green</b> = winning right now, <b style="color:var(--bad)">red</b> = losing right now, grey = not started. Nothing is final until the market closes at 4:00 PM ET.</p><div class="today"><div class="tcard win"><div class="tstock">INM</div><div class="tstate">🟢 Winning so far · +1%</div></div><div class="tcard win"><div class="tstock">LABT</div><div class="tstate">🟢 Winning so far · +8%</div></div><div class="tcard win"><div class="tstock">ZCMD</div><div class="tstate">🟢 Winning so far · +136%</div></div><div class="tcard wait"><div class="tstock">INLF</div><div class="tstate">⏳ Hasn't started yet</div></div></div>
 <div class="stats">
   <div class="stat"><div class="stat-val">19</div>
         <div class="stat-lbl">Trades tracked</div><div class="stat-sub">triggered &amp; completed</div></div>
@@ -77,6 +77,10 @@ tr:last-child td { border-bottom:0; }
         <div class="stat-lbl">Win rate at close</div><div class="stat-sub">honest exit</div></div>
   <div class="stat"><div class="stat-val">+22.1%</div>
         <div class="stat-lbl">Avg return / trade</div><div class="stat-sub">held to close</div></div>
+  <div class="stat"><div class="stat-val">58%</div>
+        <div class="stat-lbl">Win rate with rule</div><div class="stat-sub">+25% target / -10% stop</div></div>
+  <div class="stat"><div class="stat-val">+9.7%</div>
+        <div class="stat-lbl">Avg with rule</div><div class="stat-sub">sell +25% or bail -10%</div></div>
   <div class="stat"><div class="stat-val">+67.3%</div>
         <div class="stat-lbl">Avg best case</div><div class="stat-sub">perfect exit at top</div></div>
   <div class="stat"><div class="stat-val">-21.4%</div>
@@ -102,13 +106,14 @@ tr:last-child td { border-bottom:0; }
           <td class="num">3/5</td>
           <td class="num pos">+18.0%</td></tr></tbody>
 </table></div>
-<h2>Completed calls — track record</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Ticker</th><th>Direction</th><th class="num">Best case</th><th class="num">Drawdown</th><th class="num">At close</th><th>Result</th></tr></thead><tbody><tr>
+<h2>Completed calls — track record</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Ticker</th><th>Direction</th><th class="num">Best case</th><th class="num">Drawdown</th><th class="num">At close</th><th class="num">With rule (+25%/-10%)</th><th>Result</th></tr></thead><tbody><tr>
           <td>2026-07-21</td>
           <td class="tk">KIDZ</td>
           <td>long</td>
           <td class="num best">+28.4%</td>
           <td class="num dd">-37.0%</td>
           <td class="num close">-32.1%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-07-21</td>
@@ -117,6 +122,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+21.6%</td>
           <td class="num dd">-20.6%</td>
           <td class="num close">-4.4%</td>
+          <td class="num neg">-10.0%<span class="note">stop</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-07-21</td>
@@ -125,6 +131,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+104.5%</td>
           <td class="num dd">-47.1%</td>
           <td class="num close">-45.4%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-07-21</td>
@@ -133,6 +140,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+120.0%</td>
           <td class="num dd">-23.2%</td>
           <td class="num close">+44.7%</td>
+          <td class="num neg">-10.0%<span class="note">stop</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-07-20</td>
@@ -141,6 +149,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+39.5%</td>
           <td class="num dd">-59.0%</td>
           <td class="num close">-50.7%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-07-20</td>
@@ -149,6 +158,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+416.8%</td>
           <td class="num dd">+0.0%</td>
           <td class="num close">+416.8%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-07-17</td>
@@ -157,6 +167,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+46.8%</td>
           <td class="num dd">-8.1%</td>
           <td class="num close">+19.9%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-07-17</td>
@@ -165,6 +176,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+20.8%</td>
           <td class="num dd">-9.5%</td>
           <td class="num close">+14.9%</td>
+          <td class="num pos">+14.9%<span class="note">close</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-07-08</td>
@@ -173,6 +185,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+0.7%</td>
           <td class="num dd">-29.1%</td>
           <td class="num close">-20.1%</td>
+          <td class="num neg">-10.0%<span class="note">stop</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-07-08</td>
@@ -181,6 +194,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+45.0%</td>
           <td class="num dd">+0.0%</td>
           <td class="num close">+12.2%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-07-07</td>
@@ -189,6 +203,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+17.0%</td>
           <td class="num dd">-57.6%</td>
           <td class="num close">-46.1%</td>
+          <td class="num neg">-10.0%<span class="note">stop</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-07-07</td>
@@ -197,6 +212,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+6.4%</td>
           <td class="num dd">-20.2%</td>
           <td class="num close">-14.8%</td>
+          <td class="num neg">-10.0%<span class="note">stop</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-07-07</td>
@@ -205,6 +221,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+57.9%</td>
           <td class="num dd">-7.0%</td>
           <td class="num close">+31.2%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-07-07</td>
@@ -213,6 +230,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+30.0%</td>
           <td class="num dd">-8.8%</td>
           <td class="num close">+4.4%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-05-27</td>
@@ -221,6 +239,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+17.1%</td>
           <td class="num dd">-18.2%</td>
           <td class="num close">+1.9%</td>
+          <td class="num neg">-10.0%<span class="note">stop</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-05-27</td>
@@ -229,6 +248,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+51.1%</td>
           <td class="num dd">-17.2%</td>
           <td class="num close">-4.9%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-05-27</td>
@@ -237,6 +257,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+10.8%</td>
           <td class="num dd">-20.8%</td>
           <td class="num close">-15.1%</td>
+          <td class="num neg">-10.0%<span class="note">stop</span></td>
           <td><span class="pill loss">LOSS</span></td>
         </tr><tr>
           <td>2026-05-27</td>
@@ -245,6 +266,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+190.9%</td>
           <td class="num dd">-9.1%</td>
           <td class="num close">+103.1%</td>
+          <td class="num pos">+25.0%<span class="note">target</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr><tr>
           <td>2026-05-27</td>
@@ -253,6 +275,7 @@ tr:last-child td { border-bottom:0; }
           <td class="num best">+53.8%</td>
           <td class="num dd">-13.8%</td>
           <td class="num close">+4.8%</td>
+          <td class="num neg">-10.0%<span class="note">stop</span></td>
           <td><span class="pill win">WIN</span></td>
         </tr></tbody></table></div>
 <div class="foot">
