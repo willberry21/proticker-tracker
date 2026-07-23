@@ -64,6 +64,12 @@ tr:last-child td { border-bottom:0; }
 .tstate { font-size:14px; margin-top:5px; color:var(--dim); }
 .tcard.win .tstate { color:var(--good); font-weight:600; }
 .tcard.lose .tstate { color:var(--bad); font-weight:600; }
+.tcatch { font-size:12.5px; margin-top:6px; line-height:1.4; }
+.catch { font-size:13px; white-space:normal; max-width:280px; }
+.catch-catch, .tcatch-catch { color:var(--good); font-weight:600; }
+.catch-wait, .tcatch-wait { color:var(--accent); }
+.catch-chase, .tcatch-chase { color:#caa63c; font-weight:600; }
+.catch-missed, .tcatch-missed { color:var(--bad); font-weight:600; }
 .updates { display:flex; flex-direction:column; gap:10px; }
 .update { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
 .update-d { font-weight:700; font-size:12.5px; color:var(--accent); margin-bottom:4px; }
@@ -73,12 +79,12 @@ tr:last-child td { border-bottom:0; }
 .foot b { color:var(--txt); }
 </style></head><body><div class="wrap">
 <h1>Does Pro Ticker Work?</h1>
-<p class="sub">Independent accuracy tracking · scored against real market data · updated Thursday, July 23 2026 at 12:20 PM ET</p>
+<p class="sub">Independent accuracy tracking · scored against real market data · updated Thursday, July 23 2026 at 12:21 PM ET</p>
 
 
 
 <div class="verdict neutral">Too early — 23 of 30 completed trades tracked</div>
-<h2>Today so far — Thursday, July 23</h2><p class="sub">These are Pro Ticker's picks for today, in plain words. A pick only <b>starts</b> once the stock reaches Pro Ticker's entry point &mdash; until then it is just waiting. <b style="color:var(--good)">Green</b> = winning right now, <b style="color:var(--bad)">red</b> = losing right now, grey = not started. Nothing is final until the market closes at 4:00 PM ET.</p><div class="today"><div class="tcard wait"><div class="tstock">LGCL</div><div class="tstate">⏳ Hasn't started yet</div></div><div class="tcard lose"><div class="tstock">WBUY</div><div class="tstate">🔴 Losing so far · -7%</div></div><div class="tcard lose"><div class="tstock">EHGO</div><div class="tstate">🔴 Losing so far · -22%</div></div></div>
+<h2>Today so far — Thursday, July 23</h2><p class="sub">These are Pro Ticker's picks for today, in plain words. A pick only <b>starts</b> once the stock reaches Pro Ticker's entry point &mdash; until then it is just waiting. <b style="color:var(--good)">Green</b> = winning right now, <b style="color:var(--bad)">red</b> = losing right now, grey = not started. Nothing is final until the market closes at 4:00 PM ET.</p><div class="today"><div class="tcard wait"><div class="tstock">LGCL</div><div class="tstate">⏳ Hasn't started yet</div><div class="tcatch tcatch-wait">⏳ Not triggered yet — you still have time; wait for the entry</div></div><div class="tcard lose"><div class="tstock">WBUY</div><div class="tstate">🔴 Losing so far · -7%</div><div class="tcatch tcatch-catch">✅ Still near the entry — catchable right now</div></div><div class="tcard lose"><div class="tstock">EHGO</div><div class="tstate">🔴 Losing so far · -22%</div><div class="tcatch tcatch-missed">❌ Missed — it already ran to its target move and is fading</div></div></div>
 <div class="stats">
   <div class="stat"><div class="stat-val">23</div>
         <div class="stat-lbl">Trades tracked</div><div class="stat-sub">triggered &amp; completed</div></div>
